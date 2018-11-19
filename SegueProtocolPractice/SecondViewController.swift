@@ -9,11 +9,17 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    var viewControllerText:String? = ""
 
+    @IBOutlet weak var textFromViewController: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        textFromViewController.text = viewControllerText
     }
 
     override func didReceiveMemoryWarning() {
